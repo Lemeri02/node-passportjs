@@ -43,7 +43,9 @@ const hu = { 'Content-Type': 'text/html; charset=utf-8' };
 const app = x();
 Router
   .route('/')
-  .get(r => r.res.end(`<a href="/locallogin">Авторизоваться по этой ссылке</a><p><a href="/users">Users из базы данных</a></p>`));
+  .get(r => r.res.end(`<a href="/locallogin">Авторизоваться по этой ссылке</a>
+  <p><a href="/users">Users из базы данных</a></p>
+  <p><a href="https://github.com/Lemeri02/node-passportjs">https://github.com/Lemeri02/node-passportjs</a></p>`));
 Router
   .route('/err')
   .get(r => r.res.end('Увы, не получилось! Ещё раз: <a href="/profile">Профиль</a>'));

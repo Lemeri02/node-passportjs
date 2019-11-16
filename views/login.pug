@@ -10,9 +10,9 @@ html
     link(rel='stylesheet', href='https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css')
   body
     h2 Введите логин и пароль!
-    form(method='post', action='/login/check')
+    form(method='post', action='/locallogin/check')
       input(name='login', placeholder='логин')
       br
-      input(name='pass', type='password', placeholder='пароль')
+      input(name='password', type='password', placeholder='пароль')
       br
       input.btn.btn-primary(type='submit', value='Залогиниться')
